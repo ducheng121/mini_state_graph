@@ -63,16 +63,16 @@
 
 ## 安装
 
-开发模式安装：
+推荐安装方式：
 
 ```bash
-pip install -e .
+pip install git+https://github.com/ducheng121/mini_state_graph.git
 ```
 
-不安装也可以直接运行：
+安装后即可直接：
 
-```bash
-PYTHONPATH=src python -m unittest discover -s tests -p 'test_*.py'
+```python
+import mini_state_graph
 ```
 
 ## 目录
@@ -99,14 +99,16 @@ mini_state_graph/
 
 ## 运行测试
 
-```bash
-python -m unittest discover -s tests -p 'test_*.py'
-```
-
-如果你没有执行 `pip install -e .`，那就使用：
+如果你是直接运行源码，用这个：
 
 ```bash
 PYTHONPATH=src python -m unittest discover -s tests -p 'test_*.py'
+```
+
+如果你已经安装过项目，用这个：
+
+```bash
+python -m unittest discover -s tests -p 'test_*.py'
 ```
 
 ## 概念对照
